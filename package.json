@@ -1,0 +1,38 @@
+{
+  "name": "koishi-plugin-moonshot-api-plus",
+  "description": "A advanced chat robot that calls the moonshot API and supports agents.",
+  "version": "0.0.5",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoonshotAI/koishi-plugin-moonshot-api-plus"
+  },  
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "plugin",
+    "stable diffusion"
+  ],
+  "peerDependencies": {
+    "koishi": "^4.15.1"
+  },
+  "dependencies": {
+    "openai": "^4.16.0"
+  },
+  "koishi": {
+    "browser": true,
+    "description": {
+      "en": "Moonshot API Plus",
+      "zh": "Moonshot API 插件的增强版，支持监听群聊事件、历史记忆、搭配 stable diffusion 插件进行画图等功能。"
+    }
+  }
+}
